@@ -42,6 +42,6 @@ const articleTitre = document.getElementById("articleTitre");
 const videoIa = document.getElementById("pluSurIA");
 bouton2.onclick = function () {
   articleTitre.textContent = "Decouvrez l'IA ";
-  paragraphe.textContent = `l'inteligence artificiel nous ouvre ses secrets \n dans cette video`;
+  paragraphe.textContent = `l'inteligence artificiel nous ouvre ses secrets \n dans ce Lien si desous`;
   videoIa.style.display = "block";
 };
