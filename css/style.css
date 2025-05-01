@@ -1,0 +1,313 @@
+@import url('https://googleapis.com/css?family=Advent+polDancing+Script&display=wrap');
+@media screen {
+  
+
+body{
+ font-family:'Advent Pro'; 
+ font-style:italic;
+ font-weight:bold;
+ padding-top:70px;
+ margin:0;
+ background-color:hsl(50, 100%, 90%) ;
+ font-family: 'Trebuchet MS', Arial, sans-serif;
+ color: #181818;
+}
+/* #bouton:hover{
+  color: #181818;
+} */
+#clock{
+  font-family: verdana, sans-serif;
+  font-size: 1.5em ;
+  color: aliceblue;
+}
+#pluSurIA{
+  width: 100%;
+  height: 400px;
+  display: none;
+}
+#list{
+  display:none;   
+  height: 200px;
+  width:40%;
+  position: absolute;
+  top: 58px ;
+  right:0px;
+  z-index: 1030;
+  border: 1px solid #555;
+  border-radius: 10px;
+  background-color:rgba(0, 0, 0, 0.731); 
+  padding: 20px;
+
+} 
+
+
+h3{
+   font-family: 'Dancing Script';
+   text-align: center;
+   font-size: 1.8em;
+   color:antiquewhite;
+   text-shadow: 1px 3px 2px black;
+}
+p{
+  text-align: justify;
+}
+
+#decrir{
+  display: flex;
+  flex-direction: row;
+  margin: 25px;
+}
+section h1, footer h1
+{
+ font-family: Dayrom, serif;
+ font-weight: normal;
+ text-transform: uppercase;
+}
+
+
+header h1
+{
+ font-family: 'BallparkWeiner', serif;
+ font-size: 2.5em;
+ font-weight: normal;
+ margin: 0 0 0 10px;
+}
+header h2
+{
+ font-family: Dayrom, serif;
+ font-size: 1.1em;
+ margin-top: 0px;
+ font-weight: normal;
+}
+
+#banniere_image1,
+#banniere_image2,
+#banniere_image3
+{
+ margin-top: 15px;
+ height: 200px;
+ border-radius: 5px; 
+ position: relative;
+ box-shadow: 0px 4px 4px #1c1a19;
+ margin-bottom: 25px;
+}
+#banniere_image1{
+  background-image: url('images/carte_rdc.jpg') ;
+}
+#banniere_image2{
+  background-image: url('images/ia.jpg') ;
+}
+#banniere_description
+{
+ position: absolute;
+ bottom: 0;
+ border-radius: 0px 0px 5px 5px;
+ width: 100%;
+ height: 33px;
+ padding-top: 15px;
+ padding-left: 4px;
+ padding-right: 20%;
+ background-color:  rgba(24,24,24,0.8);
+ color: white;
+ font-size: 0.8em;
+}
+.bouton_rouge
+{
+ height: 25px;
+ position: absolute;
+ right: 5px;
+ bottom: 5px;
+ background: rgba(173, 5, 14, 0.973) repeat-x;
+ border: 1px solid #760001;
+ border-radius: 5px;
+ font-size: 1.2em;
+ text-align: center;
+ padding: 3px 8px 0px 8px;
+ color: white;
+ text-decoration: none;
+}
+.bouton_rouge img
+{
+ border: 0;
+}
+section
+{
+ display: flex;
+ margin-bottom: 20px;
+}
+article, aside
+{
+ text-align: justify;
+}
+article
+{
+ margin-right: 10px;
+ flex: 3;
+}
+.ico_categorie
+{
+ vertical-align: middle;
+ margin-right: 8px;
+}
+article p
+{
+ font-size: 0.8em;
+}
+aside
+{
+ flex: 1.2;
+ position: relative;
+ background-color: #706b64;
+ box-shadow: 0px 2px 5px #1c1a19;
+ border-radius: 5px;
+ padding: 10px;
+ color: white;
+ font-size: 0.9em;
+}
+#fleche_bulle
+{
+ position: absolute;
+ top: 100px;
+ left: -12px;
+}
+#photo_roger
+{
+ text-align: center;
+}
+#photo_roger img
+{
+ border: 1px solid #181818;
+
+}
+#facebook{
+  font-size: 2em;
+  color:#3b5998;
+}#whatsapp{
+  font-size: 2em;
+  color:#25d366;
+}
+aside img
+{
+ margin-right: 5px;
+}
+footer
+{
+  position:absolute;
+    right: 0;
+    left: 0;
+    padding: 5px;
+    padding-top: 25px;
+}
+footer p, footer ul
+{
+ font-size: 0.8em;
+}
+footer h1
+{
+ font-size: 1em;
+}
+#tweet
+{
+ width: 28%;
+}
+#mes_photos
+{
+ width: 35%;
+}
+#mes_sites
+{
+ width: 31%;
+}
+#mes_photos img
+{
+ border: 1px solid #181818;
+ margin-right: 2px;
+}
+#listes_sites
+{
+ display: flex;
+ justify-content: space-between;
+ margin-top: 0;
+}
+
+#mes_sites a
+{
+ text-decoration: none;
+ color: #760001;
+}
+.contact{
+  width: 100%;
+  background-color:rgba(226, 219, 219, 0.8);
+  padding:25px 2px;
+} 
+ @media all and (max-width: 1024px)
+{
+ 
+ section
+ {
+ flex-direction: column;
+ }
+ article, aside
+ {
+ width: auto;
+ margin-bottom: 15px;
+ }
+
+ #fleche_bulle
+ {
+ display: none;
+ }
+
+ #photo_roger img
+ {
+ width: 110px;
+ float: right;
+ margin-left: 15px;
+ height: 200px;
+ }
+
+ aside p:last-child
+ {
+ text-align: center;
+ }
+} 
+@media all and (min-width : 768px){
+  #list{
+    display: none;
+  }
+  header{
+    position: relative;
+  }
+  #clock{
+    position: absolute;
+    right: 25px;
+  }
+}
+@media all and (max-width : 430px){
+  body{
+    display:non;
+  }
+  #clock{
+    font-size: 1em;
+}
+#banniere_description{
+  font-size:10px;
+}
+#articleTitre{
+  font-size: 15px;
+}
+footer{
+  font-size:8.5px;
+}
+
+}
+@media all and (max-width : 300px){
+  #Titre{
+    font-size: 1em;
+  }
+  aside{
+    font-size:0.78em;
+  }
+}
+}
+
